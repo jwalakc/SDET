@@ -1,6 +1,6 @@
 
-player1 = str(input("Player1 chooses: "))
-player2 = str(input("Player2 chooses: "))
+player1 = input("Player1 chooses: ").lower()
+player2 = input("Player2 chooses: ").lower()
 
 if (player1 not in ("rock", "paper", "scissors") and player2 not in ("rock", "paper", "scissors")) == True:
     print ("Invalid input! Both players have not entered rock, paper or scissors, try again.")
