@@ -12,9 +12,11 @@ public class Activity10_2 {
         WebDriver driver = new FirefoxDriver();
         Actions actions = new Actions(driver);
         String pressedKeyText;
-
-        //Open browser
+      
+        //Open browser and get page title
         driver.get("https://www.training-support.net/selenium/input-events");
+        System.out.println("Page title: " + driver.getTitle());
+        
         WebElement pressedKey = driver.findElement(By.id("keyPressed"));
         
         //Create action sequence for initials
