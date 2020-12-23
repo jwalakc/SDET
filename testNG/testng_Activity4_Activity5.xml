@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="testNGTests" >
+    <test name="SuiteTests" >
+    <groups>
+        <run>
+           <!--<include name="ButtonTests" />-->
+           
+           <exclude name="HeaderTests" />
+        </run>
+    </groups>
+       <classes>
+            <class name="testNGTests.Activity4_Demo1"/>
+            <class name="testNGTests.Activity4_Demo2"/>
+            <class name="testNGTests.Activity5"/>
+        </classes>
+    </test>
+</suite>
