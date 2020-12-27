@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LMS Test Suite" parallel="false">
+
+    <listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    </listeners>
+ 
+  	<test thread-count="5" name="LMS_Tests" parallel="classes">
+  	    <parameter name="username" value="root"/>
+        <parameter name="password" value="pa$$w0rd"/>
+       	<classes>
+      		<class name="SeleniumProject_LMS.Activity1"/>	
+     		<class name="SeleniumProject_LMS.Activity2"/>	
+      		<class name="SeleniumProject_LMS.Activity3"/>	
+      		<class name="SeleniumProject_LMS.Activity4"/>	
+      		<class name="SeleniumProject_LMS.Activity5"/>	
+      		<class name="SeleniumProject_LMS.Activity6"/>	
+      		<class name="SeleniumProject_LMS.Activity7"/>
+      		<class name="SeleniumProject_LMS.Activity8"/>
+      		<class name="SeleniumProject_LMS.Activity9"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
