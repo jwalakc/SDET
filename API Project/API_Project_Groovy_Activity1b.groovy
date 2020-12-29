@@ -23,9 +23,14 @@ class API_Project_Groovy_Activity1b {
 				println "\nLine that starts with J: \n$line"
 		
 		// Print the line that has two numbers one after the other
-			if (line ==~ /.*\d.*\d.*/) 
+			if (line ==~ /.*\d\d.*/) 
+				println "\nLine that has two numbers together: \n$line"
+					
+		// Print the line that has two numbers 
+			if (line ==~ /.*\d.*\d.*/)
 				println "\nLine that has two numbers in the line: \n$line"
 					}
+					
 		// Print the string(s) that match the pattern '\S+er'
 		//=> string(s) with 1 or more non-whitespace character followed by "er"
 		def text1 = file1.getText() =~ /\S+er/
