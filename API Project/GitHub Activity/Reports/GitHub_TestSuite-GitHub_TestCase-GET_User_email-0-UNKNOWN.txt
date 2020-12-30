@@ -1,0 +1,60 @@
+Status: UNKNOWN
+Time Taken: 211
+Size: 189
+Timestamp: Wed Dec 30 10:31:12 EST 2020
+TestStep: GET User email
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: GET
+StatusCode: 200
+URL: https://api.github.com/user/emails
+
+---------------- Request ---------------------------
+Authorization: [Bearer 4041df3d80a6387657462e40334f84f5dba49a34]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+
+GET https://api.github.com/user/emails HTTP/1.1
+Accept-Encoding: gzip,deflate
+Authorization: Bearer 4041df3d80a6387657462e40334f84f5dba49a34
+Content-Length: 0
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+X-Accepted-OAuth-Scopes: [user, user:email]
+Server: [GitHub.com]
+X-RateLimit-Used: [5]
+Access-Control-Allow-Origin: [*]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4995]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+#status#: [HTTP/1.1 200 OK]
+X-XSS-Protection: [1; mode=block]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [F1B3:2057:B238887:12813ADE:5FEC9D42]
+Transfer-Encoding: [chunked]
+Status: [200 OK]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1609343809]
+Date: [Wed, 30 Dec 2020 15:31:14 GMT]
+Cache-Control: [private, max-age=60, s-maxage=60]
+ETag: [W/"a6ae0770b93699feb561d1c8371099e7e8dec58635d780d9db70a4d1c8462785"]
+Vary: [Accept, Authorization, Cookie, X-GitHub-OTP, Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+X-OAuth-Scopes: [admin:public_key, user:email]
+
+[{"email":"jwalakc@gmail.com","primary":true,"verified":true,"visibility":"private"},{"email":"75238356+jwalakc@users.noreply.github.com","primary":false,"verified":true,"visibility":null}]

@@ -1,0 +1,66 @@
+Status: FAIL
+Time Taken: 531
+Size: 249
+Timestamp: Wed Dec 30 10:27:48 EST 2020
+TestStep: POST ssh key
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code: 422 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: POST
+StatusCode: 422
+URL: https://api.github.com/user/keys
+
+---------------- Request ---------------------------
+Authorization: [Bearer 4041df3d80a6387657462e40334f84f5dba49a34]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [448]
+Content-Type: [application/json]
+
+POST https://api.github.com/user/keys HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 4041df3d80a6387657462e40334f84f5dba49a34
+Content-Length: 448
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+{
+"title": "sshKey",
+"key": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC7CYyApWb7adWMpmanWJvVac1BlYJ+mY6+gM0QL3hnf2+S5P3VecIU+1DXEZCU/9ioLTZcDyrqU6yCAQcJeVw7OzxWpSeC57ySUOHljnzdg4v//4oh3Wk2izQKz73dzUByg9ypapCJ8rqUawlHaxUgkpMMOnmMpcaNShnAJkoobUT1VipChPaZ0b3M8ivgOjwsjq5r336QZ961kYizUtdvbc3tG1S/ejRQ73kvhdkDRu23sVFxAFs0taZCvU1PYq63jgLy45iRyPeD1XcK3PRcdimmHjpAQS4g/GQAm3XCfjTWEIvVOuExtu9tVRwi62QPiuTYlE8lbpvzcwix6NCb @DESKTOP-50DVFP9",
+"read_only": true
+}
+
+---------------- Response --------------------------
+Status: [422 Unprocessable Entity]
+X-Accepted-OAuth-Scopes: [admin:public_key, write:public_key]
+Server: [GitHub.com]
+X-RateLimit-Used: [4]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1609343809]
+Date: [Wed, 30 Dec 2020 15:27:50 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4996]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 422 Unprocessable Entity]
+Content-Length: [249]
+X-XSS-Protection: [1; mode=block]
+X-OAuth-Scopes: [admin:public_key, user:email]
+Content-Type: [application/json; charset=utf-8]
+X-GitHub-Request-Id: [F18B:3C36:A6BAF6B:11053338:5FEC9C76]
+
+{"message":"Validation Failed","errors":[{"resource":"PublicKey","code":"custom","field":"key","message":"key is already in use"}],"documentation_url":"https://docs.github.com/rest/reference/users#create-a-public-ssh-key-for-the-authenticated-user"}

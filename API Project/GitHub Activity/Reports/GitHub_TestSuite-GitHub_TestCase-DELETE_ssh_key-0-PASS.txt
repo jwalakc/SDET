@@ -1,0 +1,56 @@
+Status: PASS
+Time Taken: 111
+Size: 0
+Timestamp: Wed Dec 30 10:31:13 EST 2020
+TestStep: DELETE ssh key
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+HTTP Version: HTTP/1.1
+Endpoint: https://api.github.com
+Method: DELETE
+StatusCode: 204
+URL: https://api.github.com/user/keys/48993766
+
+---------------- Request ---------------------------
+Authorization: [Bearer 4041df3d80a6387657462e40334f84f5dba49a34]
+Connection: [Keep-Alive]
+User-Agent: [Apache-HttpClient/4.5.2 (Java/15)]
+Host: [api.github.com]
+Accept-Encoding: [gzip,deflate]
+Content-Length: [0]
+Content-Type: [application/json]
+
+DELETE https://api.github.com/user/keys/48993766 HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: application/json
+Authorization: Bearer 4041df3d80a6387657462e40334f84f5dba49a34
+Content-Length: 0
+Host: api.github.com
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.2 (Java/15)
+
+
+---------------- Response --------------------------
+Status: [204 No Content]
+X-Accepted-OAuth-Scopes: [admin:public_key]
+Server: [GitHub.com]
+X-RateLimit-Used: [7]
+Access-Control-Allow-Origin: [*]
+X-Content-Type-Options: [nosniff]
+X-RateLimit-Reset: [1609343809]
+Date: [Wed, 30 Dec 2020 15:31:14 GMT]
+X-Frame-Options: [deny]
+Referrer-Policy: [origin-when-cross-origin, strict-origin-when-cross-origin]
+Access-Control-Expose-Headers: [ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, Deprecation, Sunset]
+Strict-Transport-Security: [max-age=31536000; includeSubdomains; preload]
+X-RateLimit-Remaining: [4993]
+X-GitHub-Media-Type: [github.v3; format=json]
+Content-Security-Policy: [default-src 'none']
+Vary: [Accept-Encoding, Accept, X-Requested-With]
+X-RateLimit-Limit: [5000]
+#status#: [HTTP/1.1 204 No Content]
+X-XSS-Protection: [1; mode=block]
+X-OAuth-Scopes: [admin:public_key, user:email]
+X-GitHub-Request-Id: [F1B3:2057:B2388FF:12813B6F:5FEC9D42]
