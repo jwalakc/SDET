@@ -24,7 +24,7 @@ public class Activity2_3 {
 	    public void beforeClass() throws MalformedURLException {
 	        // Set the Desired Capabilities
 	        DesiredCapabilities caps = new DesiredCapabilities();
-	        caps.setCapability("deviceName", "<device name>");
+	        caps.setCapability("deviceName", "Pixel 4 Emulator");
 	        caps.setCapability("platformName", "Android");
 	        caps.setCapability("appPackage", "com.android.contacts");
 	        caps.setCapability("appActivity", ".activities.PeopleActivity");
