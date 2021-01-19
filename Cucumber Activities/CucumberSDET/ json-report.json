@@ -1,0 +1,116 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-01-18T04:06:57.891Z",
+        "line": 6,
+        "name": "Test for Simple Alert",
+        "description": "",
+        "id": "testing-with-tags;test-for-simple-alert",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9769138800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the page",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.openPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 100454400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User clicks the Simple Alert button",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.openSimpleAlert()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9241300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Alert opens",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.switchFocus()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9251200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Read the text from it and print it",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.readAlert()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39235700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Close the alert",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.closeAlert()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1230663700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Close Browser",
+            "match": {
+              "location": "stepDefinitions.AlertTestSteps.closeBrowser()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@activity1_3"
+          },
+          {
+            "name": "@SimpleAlert"
+          },
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Testing with Tags",
+    "description": "",
+    "id": "testing-with-tags",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Activity1_3.feature",
+    "tags": [
+      {
+        "name": "@activity1_3",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
