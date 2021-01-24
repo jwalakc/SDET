@@ -1,0 +1,2131 @@
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Open the OrangeCRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 19993516800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeCRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:19:31.306Z",
+        "line": 9,
+        "name": "Counting Dashlets",
+        "description": "",
+        "id": "crm-scenarios;counting-dashlets",
+        "after": [
+          {
+            "result": {
+              "duration": 6677450300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.crmScenarios.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1641248000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User counts the number of Dashlets on the homepage",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.dashlets()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Print the number and title of each Dashlet into the console",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.printCount()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@dashlets"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeCRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3385322900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeCRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:19:59.714Z",
+        "line": 15,
+        "name": "Create leads using parameterization",
+        "description": "",
+        "id": "crm-scenarios;create-leads-using-parameterization",
+        "after": [
+          {
+            "result": {
+              "duration": 2036626700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.crmScenarios.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8303972600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User navigates to Sales, Leads, and Create Lead",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.leads()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2981568200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User gives details like \"Ms.\", \"J\", \"CHERIYAN\", \"Manager\", \"test@email.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ms.",
+                  "offset": 25
+                },
+                {
+                  "val": "J",
+                  "offset": 32
+                },
+                {
+                  "val": "CHERIYAN",
+                  "offset": 37
+                },
+                {
+                  "val": "Manager",
+                  "offset": 49
+                },
+                {
+                  "val": "test@email.com",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.details(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3941874400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User clicks Save button",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 27934800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Navigate to the View Leads page to see results for \"MS. \", \"J\", \"CHERIYAN\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "MS. ",
+                  "offset": 52
+                },
+                {
+                  "val": "J",
+                  "offset": 60
+                },
+                {
+                  "val": "CHERIYAN",
+                  "offset": 65
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.verfiyLeads(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@leads"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeCRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4254688000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeCRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:20:20.416Z",
+        "line": 23,
+        "name": "Schedule a meeting and invite 3 members",
+        "description": "",
+        "id": "crm-scenarios;schedule-a-meeting-and-invite-3-members",
+        "after": [
+          {
+            "result": {
+              "duration": 1989696900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.crmScenarios.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7305158800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User navigates to Activities, Meetings, and Schedule a meeting",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.meeting()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7308641400,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User gives details",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.meetingName()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6273273100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User searches and add members",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.search(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email"
+                ]
+              },
+              {
+                "cells": [
+                  "Daniel",
+                  "Russo",
+                  "Daniel@abc.com"
+                ]
+              },
+              {
+                "cells": [
+                  "Charlie",
+                  "Beall",
+                  "sales39@example.us"
+                ]
+              },
+              {
+                "cells": [
+                  "Kim",
+                  "Tan",
+                  "Kim@mail.com"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20464300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Navigate to View Meetings page and confirm creation of the meeting",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.verfiyMeeting()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@meeting"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeCRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3843321400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeCRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:20:47.594Z",
+        "line": 44,
+        "name": "Creating a Product",
+        "description": "",
+        "id": "crm-scenarios;creating-a-product;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 2501720100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.crmScenarios.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6764045400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User navigates to All, Products, and Create Product",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.product()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3724608500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enters details about the product like \"PENCIL\" and \"2.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PENCIL",
+                  "offset": 44
+                },
+                {
+                  "val": "2.99",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.productDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2905678800,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks Save button",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22516400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User navigates to View Products page to see \"PENCIL\" listed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "PENCIL",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.productDetails(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@product"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeCRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4320124200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeCRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:21:07.365Z",
+        "line": 45,
+        "name": "Creating a Product",
+        "description": "",
+        "id": "crm-scenarios;creating-a-product;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1962387900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.crmScenarios.logout()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6427305000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User navigates to All, Products, and Create Product",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.product()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3195912600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "User enters details about the product like \"BOOK\" and \"14.99\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BOOK",
+                  "offset": 44
+                },
+                {
+                  "val": "14.99",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.productDetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2902523500,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "User clicks Save button",
+            "match": {
+              "location": "stepDefinitions.crmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 22320700,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "User navigates to View Products page to see \"BOOK\" listed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "BOOK",
+                  "offset": 45
+                }
+              ],
+              "location": "stepDefinitions.crmScenarios.productDetails(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CRM"
+          },
+          {
+            "name": "@product"
+          }
+        ]
+      }
+    ],
+    "name": "CRM Scenarios",
+    "description": "",
+    "id": "crm-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/CRM.feature",
+    "tags": [
+      {
+        "name": "@CRM",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6786054400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:21:26.206Z",
+        "line": 9,
+        "name": "To create a job vacancy for �DevOps Engineer�",
+        "description": "",
+        "id": "hrm-scenarios;to-create-a-job-vacancy-for-�devops-engineer�",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2187574900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to the Recruitment page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Recruitment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1778599400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on the Vacancies menu item to navigate to the vacancies page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Vacancies()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 740470000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Click on the Add button to navigate to the Add Job Vacancy form",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.addNew()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 351808700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Fill out the details like \"DevOps Engineer\", \"DevOps vacancy J1\", \"Hugh Jackman\", \"3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DevOps Engineer",
+                  "offset": 27
+                },
+                {
+                  "val": "DevOps vacancy J1",
+                  "offset": 46
+                },
+                {
+                  "val": "Hugh Jackman",
+                  "offset": 67
+                },
+                {
+                  "val": "3",
+                  "offset": 83
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.vacancyDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1346305800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 60004600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify that the vacancy was created for \"DevOps Engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "DevOps Engineer",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.verifyVacany(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@jobVacancy"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3243866500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:21:39.469Z",
+        "line": 19,
+        "name": "Add information about a candidate for recruitment",
+        "description": "",
+        "id": "hrm-scenarios;add-information-about-a-candidate-for-recruitment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1611755600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User navigates to the Recruitment page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Recruitment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1789809500,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User clicks on the Add button to add candidate information",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Candidates()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 348038200,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User fills in the details of the candidate",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.candidateDetails()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 50814800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Upload a resume to the form",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.resume()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1237771900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47211500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Navigate back to the Recruitments page to confirm candidate entry",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.verifyCandidate()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@addCandidate"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3421297200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:21:47.811Z",
+        "line": 40,
+        "name": "Add multiple employees using the Examples table",
+        "description": "",
+        "id": "hrm-scenarios;add-multiple-employees-using-the-examples-table;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1495815300,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User navigates to the PIM option in the menu and click it",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.pim()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 852307900,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Click the Add button to add a new Employee",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.add()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 241569500,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Make sure the Create Login Details checkbox is checked",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.checkbox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 150571200,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Fill in the \"Jwala1\", \"cc1\", \"12111\", and \"jwjw1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jwala1",
+                  "offset": 13
+                },
+                {
+                  "val": "cc1",
+                  "offset": 23
+                },
+                {
+                  "val": "12111",
+                  "offset": 30
+                },
+                {
+                  "val": "jwjw1",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.employeeDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1820647100,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79591600,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Verify that the employee \"Jwala1\", \"cc1\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jwala1",
+                  "offset": 26
+                },
+                {
+                  "val": "cc1",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.verifyEmployee(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@addMultipleEmployees"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3135056300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:21:55.879Z",
+        "line": 41,
+        "name": "Add multiple employees using the Examples table",
+        "description": "",
+        "id": "hrm-scenarios;add-multiple-employees-using-the-examples-table;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1159006400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "User navigates to the PIM option in the menu and click it",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.pim()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 972334200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Click the Add button to add a new Employee",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.add()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 238607000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Make sure the Create Login Details checkbox is checked",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.checkbox()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 156741100,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Fill in the \"Jwala2\", \"cc2\", \"12122\", and \"jwjw2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jwala2",
+                  "offset": 13
+                },
+                {
+                  "val": "cc2",
+                  "offset": 23
+                },
+                {
+                  "val": "12122",
+                  "offset": 30
+                },
+                {
+                  "val": "jwjw2",
+                  "offset": 43
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.employeeDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1850137600,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74674500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Verify that the employee \"Jwala2\", \"cc2\" has been created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jwala2",
+                  "offset": 26
+                },
+                {
+                  "val": "cc2",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.verifyEmployee(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@addMultipleEmployees"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3240642200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:22:03.472Z",
+        "line": 55,
+        "name": "Creating multiple vacancies using data from an Examples table",
+        "description": "",
+        "id": "hrm-scenarios;creating-multiple-vacancies-using-data-from-an-examples-table;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1243639500,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User navigates to the Recruitment page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Recruitment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1210105500,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User clicks on the Vacancies menu item to navigate to the vacancies page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Vacancies()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1034120900,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Click on the Add button to navigate to the Add Job Vacancy form",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.addNew()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 348050700,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Fill out the details like \"Rust Engineer\", \"Engineer vacancy J1\", \"Amy Russo\", \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rust Engineer",
+                  "offset": 27
+                },
+                {
+                  "val": "Engineer vacancy J1",
+                  "offset": 44
+                },
+                {
+                  "val": "Amy Russo",
+                  "offset": 67
+                },
+                {
+                  "val": "10",
+                  "offset": 80
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.vacancyDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1083502100,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44994700,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Verify that the vacancy was created for \"Rust Engineer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Rust Engineer",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.verifyVacany(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@MultipleVacanies"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "Open the OrangeHRM page and login with credentials provided",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3063473100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on OrangeHRM page and logs in",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:22:11.689Z",
+        "line": 56,
+        "name": "Creating multiple vacancies using data from an Examples table",
+        "description": "",
+        "id": "hrm-scenarios;creating-multiple-vacancies-using-data-from-an-examples-table;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1346939700,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User navigates to the Recruitment page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Recruitment()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1110612300,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User clicks on the Vacancies menu item to navigate to the vacancies page",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Vacancies()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1004058700,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Click on the Add button to navigate to the Add Job Vacancy form",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.addNew()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 341483400,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Fill out the details like \"Java Developer\", \"Developer vacancy J2\", \"Tim Long\", \"7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java Developer",
+                  "offset": 27
+                },
+                {
+                  "val": "Developer vacancy J2",
+                  "offset": 45
+                },
+                {
+                  "val": "Tim Long",
+                  "offset": 69
+                },
+                {
+                  "val": "7",
+                  "offset": 81
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.vacancyDetails(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1095115700,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "User clicks the Save button",
+            "match": {
+              "location": "stepDefinitions.hrmScenarios.Save()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 64066500,
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "Verify that the vacancy was created for \"Java Developer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java Developer",
+                  "offset": 41
+                }
+              ],
+              "location": "stepDefinitions.hrmScenarios.verifyVacany(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@HRM"
+          },
+          {
+            "name": "@MultipleVacanies"
+          }
+        ]
+      }
+    ],
+    "name": "HRM Scenarios",
+    "description": "",
+    "id": "hrm-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/HRM.feature",
+    "tags": [
+      {
+        "name": "@HRM",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "User is in Alchemy Jobs site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3923568600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy Jobs site",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:22:19.720Z",
+        "line": 9,
+        "name": "Create a new user",
+        "description": "",
+        "id": "alchemy-job-board-system-scenarios;create-a-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12608161500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User navigates to Dashboard and logs in",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.loginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4873709600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks Users menu item from left hand menu",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.users()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3484524700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "locate the Add New button and click it",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.addNew()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6058541200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Fill in the necessary details",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1594362900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user clicks the Add New User button",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.clickAdd()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1911835200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Verify that the user was created",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.verfiyUsers()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jobs"
+          },
+          {
+            "name": "@createUser"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is in Alchemy Jobs site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 832692500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy Jobs site",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:22:54.181Z",
+        "line": 19,
+        "name": "Search and apply for job",
+        "description": "",
+        "id": "alchemy-job-board-system-scenarios;search-and-apply-for-job",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3275073000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User navigates to Jobs page",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.jobsPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 241823700,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User finds the Keywords search input field",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.keywordsSearch()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21580700,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Type in keywords to search for jobs",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.testerJob()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 976217700,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Find the filter using XPath and filter job type to show only Full Time jobs",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.jobType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2756811800,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User finds a job listing using XPath and click it to see job details",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.jobDetails()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23394600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Find the title of the job listing using XPath and print it to the console",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.jobTitle()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285924000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "Find and Click on the Apply for job button",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.applyJob()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jobs"
+          },
+          {
+            "name": "@SearchAndApplyJob"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is in Alchemy Jobs site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 864711900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy Jobs site",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:23:02.604Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2164756700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.logOut()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Post a job using parameterization",
+        "description": "",
+        "id": "alchemy-job-board-system-scenarios;post-a-job-using-parameterization",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9595443300,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "User navigates to Post a Job page",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.postJobPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56847300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "User enters \"jwala12@gmail.com\" and Job title as \"Automation Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jwala12@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Automation Tester",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.jobdetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 155581600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Type in Description as \"Need a tester with knowledge of JAVA, Python, Selenium, Cucumber.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Need a tester with knowledge of JAVA, Python, Selenium, Cucumber.",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.JobDescription(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 344721800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Enter Application email as \"test@gmail.com\" and company as \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@gmail.com",
+                  "offset": 28
+                },
+                {
+                  "val": "IBM",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.application(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2026279500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "User click Preview and Submit listing",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.previewAndSubmit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 887283200,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "View listing in Alchemy Jobs for \"Automation Tester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Automation Tester",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.alchemyJobs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jobs"
+          },
+          {
+            "name": "@PostJob"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is in Alchemy Jobs site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 840625600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy Jobs site",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:23:18.703Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1980211900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.logOut()"
+            }
+          }
+        ],
+        "line": 53,
+        "name": "Post a job using parameterization",
+        "description": "",
+        "id": "alchemy-job-board-system-scenarios;post-a-job-using-parameterization;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1088167000,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User navigates to Post a Job page",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.postJobPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49717100,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User enters \"jwala2@gmail.com\" and Job title as \"Automation Tester1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jwala2@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Automation Tester1",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.jobdetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79990900,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Type in Description as \"Job description 1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Job description 1",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.JobDescription(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 295734300,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Enter Application email as \"test@gmail.com\" and company as \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@gmail.com",
+                  "offset": 28
+                },
+                {
+                  "val": "IBM",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.application(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2014827900,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User click Preview and Submit listing",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.previewAndSubmit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 962467000,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "View listing in Alchemy Jobs for \"Automation Tester1\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Automation Tester1",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.alchemyJobs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jobs"
+          },
+          {
+            "name": "@PostJobExamples"
+          }
+        ]
+      },
+      {
+        "line": 5,
+        "name": "User is in Alchemy Jobs site",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1172452000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Alchemy Jobs site",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.Background()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-01-24T19:23:26.026Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2320930300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.logOut()"
+            }
+          }
+        ],
+        "line": 54,
+        "name": "Post a job using parameterization",
+        "description": "",
+        "id": "alchemy-job-board-system-scenarios;post-a-job-using-parameterization;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1368672500,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User navigates to Post a Job page",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.postJobPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 58943000,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User enters \"jwala3@gmail.com\" and Job title as \"Automation Tester2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jwala3@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Automation Tester2",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.jobdetails(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79501500,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "Type in Description as \"Job description 2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Job description 2",
+                  "offset": 24
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.JobDescription(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 283722600,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "Enter Application email as \"test@gmail.com\" and company as \"IBM\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@gmail.com",
+                  "offset": 28
+                },
+                {
+                  "val": "IBM",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.application(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2099505800,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "User click Preview and Submit listing",
+            "match": {
+              "location": "stepDefinitions.JobsScenarios.previewAndSubmit()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 949517100,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "View listing in Alchemy Jobs for \"Automation Tester2\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Automation Tester2",
+                  "offset": 34
+                }
+              ],
+              "location": "stepDefinitions.JobsScenarios.alchemyJobs(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Jobs"
+          },
+          {
+            "name": "@PostJobExamples"
+          }
+        ]
+      }
+    ],
+    "name": "Alchemy Job-board system scenarios",
+    "description": "",
+    "id": "alchemy-job-board-system-scenarios",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Jobs.feature",
+    "tags": [
+      {
+        "name": "@Jobs",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
