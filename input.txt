@@ -1,1 +1,5 @@
+
+This is testing merge conflict in the newBranch1.
+
 This input file is from the MAIN Branch to test merge conflict.
+
